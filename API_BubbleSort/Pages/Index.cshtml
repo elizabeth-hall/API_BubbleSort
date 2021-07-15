@@ -1,10 +1,34 @@
 ﻿@page
+@using API_BubbleSort.Data;
 @model IndexModel
-@{
-    ViewData["Title"] = "Home page";
-}
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h3 class="display-4">Employees</h3>
+
+    <p>
+        <a href="~/Index" class="btn btn-md btn-primary">Default Order</a>
+        <a href="~/Index" class="btn btn-md btn-primary">Bubble Sort by Name</a>
+        <a href="~/Index" class="btn btn-md btn-primary">Bubble Sort by Salary</a>
+    </p>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <tr>
+                <th> ID </th>
+                <th> Name </th>
+                <th> Salary </th>
+                <th> Age </th>
+            </tr>
+
+            @foreach(var emp in (IEnumerable<Employee>)ViewData["listOfEmployees"])
+            {
+                <tr>
+                    <td> @emp.Id </td>
+                    <td> @emp.Name </td>
+                    <td> @emp.Salary </td>
+                    <td> @emp.Age </td>
+                </tr>
+            }
+        </table>
+    </div>
 </div>

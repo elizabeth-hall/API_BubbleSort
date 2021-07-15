@@ -24,7 +24,6 @@
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.RazorCoreGenerate.cache
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/Razor/Pages/Error.cshtml.g.cs
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/Razor/Pages/Index.cshtml.g.cs
-/Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/Razor/Pages/Privacy.cshtml.g.cs
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/Razor/Pages/Shared/_Layout.cshtml.g.cs
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/Razor/Pages/Shared/_ValidationScriptsPartial.cshtml.g.cs
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/Razor/Pages/_ViewImports.cshtml.g.cs
@@ -37,3 +36,6 @@
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.pdb
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.genruntimeconfig.cache
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.csproj.CopyComplete
+/Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/bin/Debug/net5.0/Newtonsoft.Json.dll
+/Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/bin/Debug/net5.0/System.Net.Http.Formatting.dll
+/Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll
