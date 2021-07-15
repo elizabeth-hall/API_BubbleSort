@@ -9,10 +9,7 @@
     <Optimize>false</Optimize>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <Optimize>true</Optimize>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+ 
   <ItemGroup>
     <None Remove="Data\" />
     <None Remove="Newtonsoft.Json" />
