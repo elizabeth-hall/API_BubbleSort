@@ -62,17 +62,75 @@ namespace API_BubbleSort.Pages
                     }
                 }
             }
-            catch (Exception e)
+            catch(Exception e)
             {
                 _logger.LogError(e, "API call failed");
             }
         }
 
+        /// <summary>
+        /// On index page load
+        /// </summary>
         public void OnGet()
         {
             ViewData["Title"] = "Employees";
-            //add result to the view
-            ViewData["listOfEmployees"] = EmployeeList;
+
+            //add result to the view based on query parameter
+            string sortOrder = Request.Query["sort"];
+
+            if(!String.IsNullOrEmpty(sortOrder))
+            {
+                if(sortOrder.Trim().ToLower() == "name")
+                {
+                    //bubble sort by name
+                    ViewData["listOfEmployees"] = BubbleSortByName(EmployeeList);
+                }
+                else if(sortOrder.Trim().ToLower() == "salary")
+                {
+                    //bubble sort by salary
+                    ViewData["listOfEmployees"] = BubbleSortBySalary(EmployeeList);
+                }
+                else
+                {
+                    //garbage was passed in the query parameter; return default order
+                    ViewData["listOfEmployees"] = EmployeeList;
+                }
+            }
+            else
+            {
+                //default sort order
+                ViewData["listOfEmployees"] = EmployeeList;
+            }
+        }
+
+        /// <summary>
+        /// Bubble sort the list by employee name
+        /// </summary>
+        /// <param name="initEmployeeList">Initial unsorted list</param>
+        /// <returns>Sorted list</returns>
+        public List<Employee> BubbleSortByName(List<Employee> initEmployeeList)
+        {
+
+
+
+
+
+            return initEmployeeList;
+        }
+
+        /// <summary>
+        /// Bubble sort the list by employee salary
+        /// </summary>
+        /// <param name="initEmployeeList">Initial unsorted list</param>
+        /// <returns>Sorted list</returns>
+        public List<Employee> BubbleSortBySalary(List<Employee> initEmployeeList)
+        {
+
+
+
+
+
+            return initEmployeeList;
         }
     }
 }

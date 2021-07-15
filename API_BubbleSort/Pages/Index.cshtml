@@ -1,5 +1,6 @@
 ﻿@page
 @using API_BubbleSort.Data;
+@using System.Globalization;
 @model IndexModel
 
 <div class="text-center">
@@ -7,8 +8,8 @@
 
     <p>
         <a href="~/Index" class="btn btn-md btn-primary">Default Order</a>
-        <a href="~/Index" class="btn btn-md btn-primary">Bubble Sort by Name</a>
-        <a href="~/Index" class="btn btn-md btn-primary">Bubble Sort by Salary</a>
+        <a href="~/Index?sort=name" class="btn btn-md btn-primary">Bubble Sort by Name</a>
+        <a href="~/Index?sort=salary" class="btn btn-md btn-primary">Bubble Sort by Salary</a>
     </p>
 
     <div class="table-responsive">
@@ -25,7 +26,7 @@
                 <tr>
                     <td> @emp.Id </td>
                     <td> @emp.Name </td>
-                    <td> @emp.Salary </td>
+                    <td> @emp.Salary.ToString("C0", CultureInfo.CreateSpecificCulture("en-US")) </td>
                     <td> @emp.Age </td>
                 </tr>
             }
