@@ -8,7 +8,9 @@
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/bin/Debug/net5.0/API_BubbleSort.pdb
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/bin/Debug/net5.0/API_BubbleSort.Views.dll
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/bin/Debug/net5.0/API_BubbleSort.Views.pdb
-/Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.csproj.AssemblyReference.cache
+/Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/bin/Debug/net5.0/System.Net.Http.Formatting.dll
+/Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/bin/Debug/net5.0/Newtonsoft.Json.dll
+/Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.GeneratedMSBuildEditorConfig.editorconfig
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.AssemblyInfoInputs.cache
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.AssemblyInfo.cs
@@ -31,11 +33,9 @@
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.RazorTargetAssemblyInfo.cache
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.RazorTargetAssemblyInfo.cs
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.Views.pdb
+/Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.csproj.CopyComplete
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.dll
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/ref/API_BubbleSort.dll
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.pdb
 /Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.genruntimeconfig.cache
-/Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.csproj.CopyComplete
-/Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/bin/Debug/net5.0/Newtonsoft.Json.dll
-/Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/bin/Debug/net5.0/System.Net.Http.Formatting.dll
-/Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll
+/Users/elizabeth/Projects/API_BubbleSort/API_BubbleSort/obj/Debug/net5.0/API_BubbleSort.csproj.AssemblyReference.cache

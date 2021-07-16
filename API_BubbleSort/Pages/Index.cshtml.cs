@@ -22,7 +22,7 @@ namespace API_BubbleSort.Pages
         /// </summary>
         private const string apiRoute = "https://dummy.restapiexample.com/api/v1/employees";
 
-        private List<Employee> _employeeList;
+        private static List<Employee> _employeeList;
 
         /// <summary>
         /// Property to hold list of deserialized employees
@@ -110,10 +110,26 @@ namespace API_BubbleSort.Pages
         /// <returns>Sorted list</returns>
         public List<Employee> BubbleSortByName(List<Employee> initEmployeeList)
         {
+            //assume list is not sorted by name to start
+            bool sorted = false;
 
-
-
-
+            while(!sorted)
+            {
+                //temporarily switch flag to true until determined otherwise
+                sorted = true;
+                for(int i = 0; i < initEmployeeList.Count - 1; i++)
+                {
+                    //compare current element and the next
+                    if(String.Compare(initEmployeeList[i].Name, initEmployeeList[i + 1].Name, StringComparison.OrdinalIgnoreCase) > 0)
+                    {
+                        //swap out of order elements
+                        Swap(initEmployeeList, i, i + 1);
+                        //since there were out of order elements, the list is not yet sorted 
+                        sorted = false;
+                    }
+                }
+                //if sorted is false at the end of the for loop, need to iterate over the list again
+            }
 
             return initEmployeeList;
         }
@@ -125,11 +141,48 @@ namespace API_BubbleSort.Pages
         /// <returns>Sorted list</returns>
         public List<Employee> BubbleSortBySalary(List<Employee> initEmployeeList)
         {
+            //assume list is not sorted by name to start
+            bool sorted = false;
 
+            while (!sorted)
+            {
+                //temporarily switch flag to true until determined otherwise
+                sorted = true;
+                for(int i = 0; i < initEmployeeList.Count - 1; i++)
+                {
+                    //compare current element and the next
+                    if(initEmployeeList[i].Salary > initEmployeeList[i + 1].Salary)
+                    {
+                        //swap out of order elements
+                        Swap(initEmployeeList, i, i + 1);
+                        //since there were out of order elements, the list is not yet sorted
+                        sorted = false;
+                    }
+                }
+                //if sorted is false at the end of the for loop, need to iterate over the list again
+            }
 
+            return initEmployeeList;
+        }
 
+        /// <summary>
+        /// Used to swap two elements in an employee list
+        /// </summary>
+        /// <param name="initEmployeeList">List of employees</param>
+        /// <param name="indexOne">First index that needs to be swapped</param>
+        /// <param name="indexTwo">Second index that needs to be swapped</param>
+        /// <returns></returns>
+        public List<Employee> Swap(List<Employee> initEmployeeList, int indexOne, int indexTwo)
+        {
+            //temp var for employee in first index
+            Employee temp = initEmployeeList[indexOne];
 
+            //move contents of second index into first index
+            initEmployeeList[indexOne] = initEmployeeList[indexTwo];
+            //move item that was in first index into second index
+            initEmployeeList[indexTwo] = temp;
 
+            //return list with elements swapped
             return initEmployeeList;
         }
     }
